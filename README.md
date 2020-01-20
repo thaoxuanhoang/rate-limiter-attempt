@@ -10,11 +10,13 @@
 ## Run tests
 The module is fully tested with unit tests & integration tests.
 ```
+npm run compile
 npm run test
 ```
 
 ## Sample
 ```
+npm run compile
 npm run sample
 ```
 - The limit is 4 requests every 10 seconds -> Every 2.5 seconds, a new token is added
