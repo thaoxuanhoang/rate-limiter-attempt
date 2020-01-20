@@ -1,0 +1,50 @@
+{
+  "name": "rate-limiter-attempt",
+  "version": "0.0.1",
+  "description": "An attempt at building a rate limiter module.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^13.1.8",
+    "lodash": "^4.17.15",
+    "ms": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "clean": "rm -rf ./dist",
+    "test": "jest --coverage --verbose --testPathIgnorePatterns ./dist",
+    "lint": "./node_modules/.bin/eslint src/ --ext .ts",
+    "lint:fix": "./node_modules/.bin/eslint src/ --ext .ts --fix",
+    "sample": "tsc-watch --onSuccess \"node ./dist/sample.js\""
+  },
+  "author": "Thao Hoang",
+  "license": "ISC",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
