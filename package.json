@@ -23,8 +23,8 @@
     "typescript": "^3.7.4"
   },
   "scripts": {
-    "compile": "tsc",
-    "clean": "rm -rf ./dist",
+    "compile": "npm i && tsc",
+    "clean": "rm -rf ./dist ./node_modules",
     "test": "jest --coverage --verbose --testPathIgnorePatterns ./dist",
     "lint": "./node_modules/.bin/eslint src/ --ext .ts",
     "lint:fix": "./node_modules/.bin/eslint src/ --ext .ts --fix",
